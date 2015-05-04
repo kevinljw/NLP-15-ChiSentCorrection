@@ -57,3 +57,5 @@ fi
 if [ $lang = "ctb" ] || [ $lang = "pku" ]; then
   $JAVACMD -loadClassifier $DATADIR/$lang.gz -serDictionary $DICTS $KBESTCMD > $segResultFile
 fi
+
+python src/rightWrongParsed.py

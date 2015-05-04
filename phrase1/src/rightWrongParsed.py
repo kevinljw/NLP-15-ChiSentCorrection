@@ -3,10 +3,10 @@
 
 nGram = {}
 nGramHashKeyList = []
-line = open("../input/240365_p1.train.txt",'r')
-parsed = open("../tmp/segResult.txt",'r')
-rightNgram = open("../tmp/rightParsed.txt",'w')
-worngNgram = open("../tmp/wrongParsed.txt",'w')
+line = open("input/240365_p1.train.txt",'r')
+parsed = open("tmp/segResult.txt",'r')
+rightNgram = open("tmp/rightParsed.txt",'w')
+worngNgram = open("tmp/wrongParsed.txt",'w')
 
 for i in xrange(5924):#5924 2962
     data = line.readline()

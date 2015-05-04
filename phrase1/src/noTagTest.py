@@ -3,8 +3,8 @@
 
 nGram = {}
 nGramHashKeyList = []
-line = open("../input/p1.test.txt",'r')
-rightNgram = open("../tmp/noTagTest.txt",'w')
+line = open("input/p1.test.txt",'r')
+rightNgram = open("tmp/noTagTest.txt",'w')
 
 for i in xrange(200):#5924 2962
     data = line.readline()

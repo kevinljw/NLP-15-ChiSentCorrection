@@ -5,9 +5,9 @@ nGram = {}
 nGramHashKeyList = []
 
 line = open("input/240365_p1.train.txt",'r')
-parsed = open("tmp/segResult.txt",'r')
+parsed = open("tmp/segResultTrain.txt",'r')
 rightNgram = open("tmp/rightParsed.txt",'w')
-worngNgram = open("tmp/wrongParsed.txt",'w')
+wrongNgram = open("tmp/wrongParsed.txt",'w')
 mixNgram = open("tmp/mixParsed.txt",'w')
 
 

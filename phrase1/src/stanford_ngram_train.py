@@ -5,7 +5,7 @@ import numpy as np
 file_td = file('tmp/mixParsed.txt', 'r')    # training data
 file_rn = file('tmp/rightNgram.txt', 'r')   # right bigram
 file_wn = file('tmp/wrongNgram.txt', 'r')   # wrong bigram
-file_pb = file('tmp/train_avg_prob.txt', 'w')   # output probability
+file_pb = file('tmp/train_prob.txt', 'w')   # output probability
 
 NgramTableR = {}
 NgramTableW = {}

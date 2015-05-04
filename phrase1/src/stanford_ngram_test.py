@@ -5,7 +5,7 @@ import numpy as np
 file_td = file('tmp/segResultTest.txt', 'r')            # training data
 file_rn = file('tmp/rightNgram.txt', 'r')               # right bigram
 file_wn = file('tmp/wrongNgram.txt', 'r')               # wrong bigram
-file_pb = file('tmp/test_avg_prob.txt', 'w')                # output probability
+file_pb = file('tmp/test_prob.txt', 'w')                # output probability
 file_an = file('tmp/manual_labeled_answer.txt', 'r')    # answer labeled manually
 
 NgramTableR = {}

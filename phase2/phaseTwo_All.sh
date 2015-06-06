@@ -45,5 +45,5 @@ if [ $lang = "ctb" ] || [ $lang = "pku" ]; then
   $JAVACMD2 -loadClassifier $DATADIR/$lang.gz -serDictionary $DICTS $KBESTCMD > $segResultTestFile
 fi
 
-
+python src/train.py
 

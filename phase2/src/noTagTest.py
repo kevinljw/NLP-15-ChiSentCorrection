@@ -1,5 +1,8 @@
+import jieba
+
 trainData = open("input/p2.val.txt",'r')
-noTag = open("tmp/noTagTest.txt",'w')
+noTag = open("tmp/segResultTest.txt",'w')
+jieba.load_userdict("input/stopword.txt")
 
 for line in trainData:
     
@@ -9,7 +12,10 @@ for line in trainData:
     
     # # print(wrong)
     # print(testingData[0])
-
-    noTag.write(str(testingData[0])+'\n')
+    words = jieba.cut(testingData[0], cut_all=False)
+    for word in words:
+      # print word.encode('UTF-8')
+      noTag.write(str(word.encode('UTF-8'))+" ")
+    noTag.write("\n")
 
   

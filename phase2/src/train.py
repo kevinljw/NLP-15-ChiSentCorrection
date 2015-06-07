@@ -48,16 +48,16 @@ for line in trainData:
 
       # count(w1w2)-----------------
       if everyWord in stopwordDict:
-         setWordList = list(set(wordList))
-         if everyWord not in wwDict:
-            wwDict[everyWord]=dict()
-         for i in setWordList:
-            if i not in stopwordDict:
-               # thisWordList = list(wwDict[everyWord])
-               if i not in wwDict[everyWord]:
-                  wwDict[everyWord][i]=1
-               else:
-                  wwDict[everyWord][i]+=1
+        setWordList = list(set(wordList))
+        if everyWord not in wwDict:
+          wwDict[everyWord]=dict()
+        for i in setWordList:
+          if i != everyWord:
+            # thisWordList = list(wwDict[everyWord])
+            if i not in wwDict[everyWord]:
+              wwDict[everyWord][i]=1
+            else:
+              wwDict[everyWord][i]+=1
 
 # print(w2Dict.values())
 # print(stopwordDict.values())
@@ -70,6 +70,6 @@ for k,v in w2Dict.items():
    cw.write(str(k)+" "+str(v)+"\n")
 
 for k,v in wwDict.iteritems():
-   for k2,v2 in v.items():
+    for k2,v2 in v.items():
       cww.write(str(k)+" "+str(k2)+" "+str(v2)+"\n")
   

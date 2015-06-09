@@ -1,8 +1,8 @@
 #place = open("place.txt",'r')
 
-ans = open("ans.txt",'r')
-test = open("p2.test.txt",'r')
-result = open("p2.result.txt",'w')
+ans = open("tmp/ans.txt",'r')
+test = open("input/p2.test.txt",'r')
+result = open("output/p2.result.txt",'w')
 length = 200
 
 

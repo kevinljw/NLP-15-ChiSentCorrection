@@ -46,4 +46,8 @@ python src/noTagTrainError_p.py
 # fi
 
 python src/train.py
-
+python src/parse.py
+python src/redundant.py
+python src/redundantNum.py
+python src/countProbFinal.py
+python src/makeResult.py

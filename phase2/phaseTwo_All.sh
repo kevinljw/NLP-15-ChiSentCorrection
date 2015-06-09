@@ -11,10 +11,10 @@ fileTrain='tmp/noTag.txt'
 fileTest='tmp/noTagTest.txt'
 
 
-python src/noTag.py
-python src/noTagTest.py
+python src/noTag_p.py
+python src/noTagTest_p.py
 
-
+python src/noTagTrainError_p.py
 
 # echo -n "File: " >&2
 # echo $fileTrain >&2

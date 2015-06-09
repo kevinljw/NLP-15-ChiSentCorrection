@@ -1,7 +1,7 @@
 
 
 trainData = open("tmp/segResultTrain.txt",'r')
-stopwordData = open("input/stopword.txt",'r')
+stopwordData = open("input/redundant.txt",'r')
 cw = open("tmp/cw.txt",'w')
 cww = open("tmp/cww.txt",'w')
 
@@ -10,11 +10,11 @@ wwDict=dict()
 
 for everyStopword in stopwordData:
 
-   rawEachWord = everyStopword.strip()
+   rawEachWord = everyStopword.split(" ")
    # print(everyStopword.strip()+"-")
 
-   if rawEachWord not in stopwordDict:
-      stopwordDict[rawEachWord] = 0
+   if rawEachWord[0] not in stopwordDict:
+      stopwordDict[rawEachWord[0]] = 0
 
 
    # print(stopwordDict[token[0]])
@@ -32,7 +32,7 @@ for line in trainData:
     
     token = line.split('\n')
 
-    wordList = token[0].split()
+    wordList = list(set(token[0].split()))
 
     # print(W2List)
 

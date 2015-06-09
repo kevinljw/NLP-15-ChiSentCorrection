@@ -104,8 +104,8 @@ for a in alpha:
             same = 0
             i = 0
             count = 0
-            parsed = open("parsedP.txt",'r')
-            ourAns = open("testDefined_ans.txt",'r')
+            parsed = open("tmp/parsed.txt",'r')
+            #ourAns = open("testDefined_ans.txt",'r')
             #parsed = open("parsedPt.txt",'r')
             #ourAns = open("place.txt",'r')
             for data in parsed:#2962
@@ -210,6 +210,7 @@ for a in alpha:
                     #pri
                     #print(j)
                 ans.write(str(length+1)+' '+str(length+len(minWord)/3)+"\n")#+str(minWord)+"\n")
+                """
                 data = ourAns.readline()
                 #print(data)
                 token = data.split()
@@ -219,6 +220,7 @@ for a in alpha:
                 if start == token[0] and end == token[1]:
                     count+=1
                 #print(minWord)
+                """
                 i+=1
 
             #print(same)

@@ -49,5 +49,6 @@ python src/train.py
 python src/parse.py
 python src/redundant.py
 python src/redundantNum.py
+python src/combination_example.py
 python src/countProbFinal.py
 python src/makeResult.py

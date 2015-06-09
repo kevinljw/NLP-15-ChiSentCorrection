@@ -21,12 +21,12 @@ for data in redundant:#5924 2962
 
 
     #sentence = "獨立音樂需要大家一起來推廣，歡迎加入我們的行列！"
-    print "Input：", sentence
+    #print "Input：", sentence
     #words = jieba.cut(sentence, cut_all=False)
     words = jieba.posseg.cut(sentence)
-    print "Output 精確模式 Full Mode："
+    #print "Output 精確模式 Full Mode："
     first = 1
-    print(words)
+    #print(words)
     for word in words:
         if first == 1:
             red.write(word.word.encode('utf8'))

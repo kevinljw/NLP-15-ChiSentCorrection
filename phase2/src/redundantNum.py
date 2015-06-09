@@ -1,6 +1,6 @@
 __author__ = 'mac'
 
-redundant = open("p2.train.txt",'r')
+redundant = open("input/p2.train.txt",'r')
 red = open("tmp/redundantNum.txt",'w')
 #place = open("place.txt",'w')
 
@@ -13,9 +13,9 @@ for i in xrange(2962):#5924 2962
     #print(token)
     wrong = token[1]
     sentence = token[2]
-    print(wrong)
-    print(sentence)
-    print(len(sentence))
+    #print(wrong)
+    #print(sentence)
+    #print(len(sentence))
     #rightset = set()
 
 
@@ -28,7 +28,7 @@ for i in xrange(2962):#5924 2962
         if word[k]!=wordW[k]:
             break
 
-    print(wordW[k:k+len(wordW)-len(word)])
+    #print(wordW[k:k+len(wordW)-len(word)])
     ans = wordW[k:k+len(wordW)-len(word)]
     if ans not in reWords:
         reWords.add(ans)

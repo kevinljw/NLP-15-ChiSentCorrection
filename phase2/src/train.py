@@ -20,7 +20,7 @@ for everyStopword in stopwordData:
    # print(stopwordDict[token[0]])
 
 
-print(len(stopwordDict))
+#print(len(stopwordDict))
 # print(stopwordDict)
 
 # cw.write(str(stopwordDict.keys()))

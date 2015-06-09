@@ -100,7 +100,7 @@ maxAns = 0
 for a in alpha:
     for b in beta:
         for g in gamma:
-            print a, b, g
+            #print a, b, g
             same = 0
             i = 0
             count = 0

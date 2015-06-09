@@ -33,5 +33,5 @@ for data in redundant:#5924 2962
         else:
             red.write(' '+word.word.encode('utf8'))
         first = 0
-        print word
+        #print word
     red.write('\n')
